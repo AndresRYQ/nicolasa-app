@@ -7,25 +7,36 @@ function Footer() {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h4>Nicolasa</h4>
-            <p>Soluciones innovadoras para tu negocio</p>
+            <h4>AURA</h4>
+            <p>El arte de lo esencial</p>
           </div>
           <div className="footer-section">
-            <h4>Enlaces</h4>
+            <h4>Navegación</h4>
             <ul>
               <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#features">Características</a></li>
-              <li><a href="#contacto">Contacto</a></li>
+              <li><a href="#filosofia">Filosofía</a></li>
+              <li><a href="#menu">Menú</a></li>
+              <li><a href="#espacio">Espacio</a></li>
+              <li><a href="#reservas">Reservas</a></li>
             </ul>
           </div>
           <div className="footer-section">
             <h4>Contacto</h4>
-            <p>Email: info@nicolasa.com</p>
-            <p>Teléfono: +34 000 000 000</p>
+            <p>Email: reservas@aura.es</p>
+            <p>Teléfono: +34 XXX XXX XXX</p>
+            <p>Dirección: Casco Histórico</p>
+          </div>
+          <div className="footer-section">
+            <h4>Síguenos</h4>
+            <ul>
+              <li><a href="#instagram">Instagram</a></li>
+              <li><a href="#facebook">Facebook</a></li>
+              <li><a href="#twitter">Twitter</a></li>
+            </ul>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2024 Nicolasa. Todos los derechos reservados.</p>
+          <p>&copy; 2026 AURA. El arte de lo esencial.</p>
         </div>
       </div>
     </footer>

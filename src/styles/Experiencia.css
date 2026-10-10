@@ -1,0 +1,112 @@
+/* Experiencia.css */
+.experiencia {
+  padding: 100px 20px;
+  background-color: #fff;
+}
+
+.experiencia-content {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.experiencia-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.experiencia-text h2 {
+  font-size: 36px;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.experiencia-text p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.experiencia-highlight {
+  background-color: #fafafa;
+  padding: 30px;
+  border-left: 3px solid #d94e4e;
+  margin-top: 30px;
+}
+
+.experiencia-highlight span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #999;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.experiencia-highlight h3 {
+  font-size: 22px;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.experiencia-highlight p {
+  font-size: 12px;
+  color: #999;
+}
+
+.experiencia-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 12px 20px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+@media (max-width: 1024px) {
+  .experiencia-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .experiencia-text h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experiencia {
+    padding: 60px 20px;
+  }
+
+  .experiencia-text h2 {
+    font-size: 24px;
+  }
+}
