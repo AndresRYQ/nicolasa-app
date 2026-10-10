@@ -1,32 +1,36 @@
 import React from 'react';
-import '../styles/Hero.css';
 
 function Hero() {
   return (
-    <section className="hero" id="inicio">
-      <div className="hero-content">
-        <div className="hero-tag">GUÍA MICHELIN 2025 - ESTRELLA & ESTRELLA VERDE</div>
-        <h1 className="hero-title">
-          El arte de<br />
-          <span className="hero-subtitle">lo esencial.</span>
-        </h1>
-        <p className="hero-description">
-          Una experiencia sensorial basada en la memoria, el fuego y la tierra.
-        </p>
-        <p className="hero-text">
-          Cocina de autor forjada bajo la cadencia del clima mediterráneo y la serenidad silvestre. Diálogo directo entre huertos regenerativos y brasa viva.
-        </p>
-        <div className="hero-actions">
-          <button className="btn btn-primary">RESERVAR MESA</button>
-          <button className="btn btn-secondary">EXPLORAR LA CARTA →</button>
+    <section className="hero-section" id="inicio">
+      <div className="hero-glow hero-glow-one" aria-hidden="true" />
+      <div className="hero-glow hero-glow-two" aria-hidden="true" />
+      <div className="page-shell hero-shell">
+        <div className="hero-meta">
+          <span className="eyebrow"><span className="status-dot" />Temporada otoño — invierno</span>
+          <span className="hero-location">Palacio S. XVIII · Madrid <span>•</span> 1 Estrella Michelin</span>
         </div>
-      </div>
-      <div className="hero-image">
-        <div className="image-placeholder">
-          <div className="image-box">
-            <span>12 Mesas</span>
-            <p>Exclusividad extrema donde para cada uno se vive</p>
+        <div className="hero-grid">
+          <div className="hero-copy">
+            <span className="eyebrow eyebrow-accent">Manifiesto gastronómico</span>
+            <h1>Cocina de origen,<br />silencio y <em>tiempo.</em></h1>
+            <p className="hero-description">Un diálogo pausado entre el terruño vivo, la memoria atávica y la botánica silvestre. Transformamos el instante efímero de la recolección en una liturgia multisensorial irrepetible.</p>
+            <div className="hero-actions">
+              <a className="button button-dark" href="#reservas">Reservar experiencia</a>
+              <a className="text-link" href="#degustar">Ver degustación <span aria-hidden="true">↓</span></a>
+            </div>
           </div>
+          <aside className="hero-aside" aria-label="La filosofía de AURA">
+            <div className="quote-card">
+              <span className="quote-symbol" aria-hidden="true">✳</span>
+              <blockquote>“Despojar el plato de artificio para que emerja la pureza intacta de la tierra que habitamos.”</blockquote>
+              <div className="quote-credit"><strong>Mateo Silvela</strong><span>Chef propietario</span></div>
+            </div>
+            <div className="hero-stats">
+              <div className="stat-card"><strong>450<span>+</span></strong><span>Referencias de bodega</span></div>
+              <div className="stat-card"><strong>14</strong><span>Mesas por servicio</span></div>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
