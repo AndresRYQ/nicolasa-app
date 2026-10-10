@@ -1,38 +1,34 @@
-/* Header.css */
 .header {
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  background-color: transparent;
+  padding: 20px 0;
 }
 
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 20px;
 }
 
 .logo h1 {
   color: #1a1a1a;
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 3px;
 }
 
 .nav ul {
   display: flex;
   list-style: none;
-  gap: 40px;
+  gap: 32px;
 }
 
 .nav a {
   text-decoration: none;
-  color: #666;
-  font-size: 12px;
+  color: #888;
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   transition: color 0.3s ease;
 }
 
@@ -43,47 +39,28 @@
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
 }
 
-.btn-reservar {
-  background-color: #1a1a1a;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn-reservar:hover {
+.user-icon {
   background-color: #333;
-}
-
-.theme-toggle {
-  background: none;
+  color: white;
   border: none;
-  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  padding: 8px;
+  transition: background-color 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .header .container {
-    flex-direction: column;
-    gap: 15px;
-  }
+.user-icon svg {
+  width: 18px;
+  height: 18px;
+}
 
-  .nav ul {
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .header-actions {
-    width: 100%;
-    justify-content: center;
-  }
+.user-icon:hover {
+  background-color: #000;
 }
