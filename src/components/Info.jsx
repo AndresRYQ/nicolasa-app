@@ -7,25 +7,25 @@ function Info() {
       id: 1,
       label: 'DISTINCIÓN',
       title: '1 Estrella Michelin',
-      description: 'Reconocimiento a la excelencia'
+      description: 'Reconocimiento a la pureza'
     },
     {
       id: 2,
       label: 'PROPUESTA',
       title: '8 & 12 Pases',
-      description: 'Basura & Gran Menú Origen'
+      description: 'Raíces y Gran Menú Origen'
     },
     {
       id: 3,
       label: 'ENTORNO',
       title: 'Casco Histórico',
-      description: 'Parques XVIII especiales'
+      description: 'Palacio s. XVIII rehabilitado'
     },
     {
       id: 4,
       label: 'BODEGA',
       title: '+450 Etiquetas',
-      description: 'Viticultura natural y vino natural'
+      description: 'Viticultura natural y viva'
     }
   ];
 
@@ -36,7 +36,7 @@ function Info() {
           {infoItems.map(item => (
             <div key={item.id} className="info-item">
               <span className="info-label">{item.label}</span>
-              <h3 className="info-title">{item.title}</h3>
+              <h3 className="info-title font-serif">{item.title}</h3>
               <p className="info-description">{item.description}</p>
             </div>
           ))}

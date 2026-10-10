@@ -1,56 +1,37 @@
-/* Info.css */
 .info {
-  padding: 80px 20px;
-  background-color: #fafafa;
-  border-top: 1px solid #eee;
+  padding: 60px 0;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  margin-top: 40px;
 }
 
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
 .info-item {
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-label {
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 1.5px;
-  color: #999;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 15px;
+  color: #888;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
 }
 
 .info-title {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 22px;
   color: #1a1a1a;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  font-weight: 400;
 }
 
 .info-description {
-  font-size: 12px;
-  color: #999;
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .info {
-    padding: 60px 20px;
-  }
-
-  .info-grid {
-    gap: 30px;
-  }
-
-  .info-title {
-    font-size: 16px;
-  }
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
 }
