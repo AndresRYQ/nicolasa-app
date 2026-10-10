@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,60 +11,57 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
   color: #333;
+  background-color: #fcfcfc;
+  background-image: radial-gradient(#e5e5e5 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
-/* Light theme */
-body.light {
-  background-color: #fff;
-  color: #1a1a1a;
+/* Serif Typography */
+.font-serif {
+  font-family: 'Playfair Display', serif;
 }
 
-body.light a {
-  color: #1a1a1a;
+/* Base button styles */
+.btn {
+  padding: 14px 28px;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  border-radius: 4px;
 }
 
-/* Dark theme */
-body.dark {
+.btn-primary {
   background-color: #1a1a1a;
-  color: #f5f5f5;
+  color: #fff;
 }
 
-body.dark .header {
-  background-color: #2a2a2a;
-  color: #f5f5f5;
+.btn-primary:hover {
+  background-color: #000;
 }
 
-body.dark .nav a {
-  color: #ccc;
+.btn-secondary {
+  background-color: transparent;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-body.dark .hero,
-body.dark .experiencia,
-body.dark .info {
-  background-color: #1a1a1a;
-  color: #f5f5f5;
+.btn-secondary:hover {
+  opacity: 0.7;
 }
-
-body.dark .hero-title,
-body.dark .experiencia-text h2,
-body.dark .info-title {
-  color: #f5f5f5;
-}
-
-body.dark .footer {
-  background-color: #0f0f0f;
-}
-
