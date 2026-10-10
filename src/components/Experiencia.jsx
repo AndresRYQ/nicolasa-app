@@ -14,7 +14,7 @@ function Experiencia() {
             </p>
             <div className="experiencia-highlight">
               <span>Menú Degustación</span>
-              <h3>8 & 12 Pases</Basura & Gran Menú Origen</h3>
+              <h3>8 & 12 Pases - Basura & Gran Menú Origen</h3>
               <p>Una travesía sensorial a través de 8 o 12 actos gastronómicos</p>
             </div>
           </div>
