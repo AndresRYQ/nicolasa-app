@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
 function Header({ theme, toggleTheme }) {
@@ -6,15 +7,17 @@ function Header({ theme, toggleTheme }) {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <h1>AURA</h1>
+          <Link to="/">
+            <h1>AURA</h1>
+          </Link>
         </div>
         <nav className="nav">
           <ul>
-            <li><a href="#inicio">INICIO</a></li>
-            <li><a href="#filosofia">FILOSOFÍA</a></li>
-            <li><a href="#menu">MENÚ DEGUSTACIÓN</a></li>
-            <li><a href="#espacio">ESPACIO</a></li>
-            <li><a href="#reservas">RESERVAS</a></li>
+            <li><Link to="/">INICIO</Link></li>
+            <li><Link to="/espacio">FILOSOFÍA</Link></li>
+            <li><a href="/#menu">MENÚ DEGUSTACIÓN</a></li>
+            <li><Link to="/espacio">ESPACIO</Link></li>
+            <li><a href="/#reservas">RESERVAS</a></li>
           </ul>
         </nav>
         <div className="header-actions">

@@ -1,56 +1,69 @@
 /* Info.css */
 .info {
-  padding: 80px 20px;
-  background-color: #fafafa;
-  border-top: 1px solid #eee;
+  padding: 90px 20px 120px;
+  background: #f4efe9;
+}
+
+.App.dark .info {
+  background: #171716;
 }
 
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .info-item {
+  background: rgba(255,255,255,0.38);
+  border: 1px solid rgba(26,26,26,0.06);
+  border-radius: 18px;
+  padding: 24px 18px;
   text-align: center;
-  padding: 20px;
+}
+
+.App.dark .info-item {
+  background: rgba(255,255,255,0.02);
+  border-color: rgba(255,255,255,0.06);
 }
 
 .info-label {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  color: #999;
-  text-transform: uppercase;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8a6657;
+  font-weight: 700;
 }
 
 .info-title {
-  font-size: 20px;
-  font-weight: 700;
+  margin: 0 0 10px;
+  font-size: clamp(1.7rem, 2vw, 2.4rem);
   color: #1a1a1a;
-  margin-bottom: 10px;
+}
+
+.App.dark .info-title,
+.App.dark .info-description {
+  color: #f4f1eb;
 }
 
 .info-description {
-  font-size: 12px;
-  color: #999;
-  line-height: 1.6;
+  color: #5d5a56;
+  line-height: 1.7;
+  font-size: 0.92rem;
 }
 
-@media (max-width: 768px) {
-  .info {
-    padding: 60px 20px;
-  }
-
+@media (max-width: 920px) {
   .info-grid {
-    gap: 30px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
 
-  .info-title {
-    font-size: 16px;
+@media (max-width: 520px) {
+  .info-grid {
+    grid-template-columns: 1fr;
   }
 }

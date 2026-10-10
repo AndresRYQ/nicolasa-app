@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg: #f7f3ee;
+  --surface: #fffdfb;
+  --surface-strong: #efeae3;
+  --text: #1a1a1a;
+  --muted: #5b5853;
+  --accent: #9f5e47;
+  --accent-soft: #f1d7c6;
+  --border: rgba(26, 26, 26, 0.08);
+  --shadow: rgba(18, 18, 18, 0.06);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +23,25 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
-  color: #333;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
 }
 
 .container {
@@ -24,45 +50,59 @@ body {
   padding: 0 20px;
 }
 
-/* Light theme */
-body.light {
-  background-color: #fff;
-  color: #1a1a1a;
+.App {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
 }
 
-body.light a {
-  color: #1a1a1a;
+.App.light {
+  --bg: #f7f3ee;
+  --surface: #fffdfb;
+  --surface-strong: #efeae3;
+  --text: #1a1a1a;
+  --muted: #5b5853;
+  --accent: #9f5e47;
+  --accent-soft: #f1d7c6;
+  --border: rgba(26, 26, 26, 0.08);
+  --shadow: rgba(18, 18, 18, 0.06);
+  background: var(--bg);
+  color: var(--text);
 }
 
-/* Dark theme */
+.App.dark {
+  --bg: #111111;
+  --surface: #1b1b1b;
+  --surface-strong: #222222;
+  --text: #f4f1eb;
+  --muted: #c7c4bf;
+  --accent: #d9a58f;
+  --accent-soft: #543a30;
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: rgba(0, 0, 0, 0.2);
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+p,
+a,
+span,
+li,
+button {
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
+}
+
+body.light,
 body.dark {
-  background-color: #1a1a1a;
-  color: #f5f5f5;
-}
-
-body.dark .header {
-  background-color: #2a2a2a;
-  color: #f5f5f5;
-}
-
-body.dark .nav a {
-  color: #ccc;
-}
-
-body.dark .hero,
-body.dark .experiencia,
-body.dark .info {
-  background-color: #1a1a1a;
-  color: #f5f5f5;
-}
-
-body.dark .hero-title,
-body.dark .experiencia-text h2,
-body.dark .info-title {
-  color: #f5f5f5;
-}
-
-body.dark .footer {
-  background-color: #0f0f0f;
+  background: var(--bg);
 }
 
